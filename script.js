@@ -1,6 +1,6 @@
 // Efeito de Digitação no Hero
 const typingElement = document.getElementById('typing-text');
-const words = ['Sofisticados', 'Premium', 'Exigentes'];
+const words = ['Projeto.', 'Ambiente.', 'Lar.', 'Negócio.'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -105,14 +105,14 @@ if (contactForm) {
         const servico = document.getElementById('servico').options[document.getElementById('servico').selectedIndex].text;
         const mensagem = document.getElementById('mensagem').value;
 
-        let textoWa = `Olá, Vizzione Glass! Meu nome é *${nome}*.\n\n`;
+        let textoWa = `Olá, Tec Glass! Meu nome é *${nome}*.\n\n`;
         textoWa += `Gostaria de um orçamento para: *${servico}*.\n`;
 
         if (mensagem) {
             textoWa += `\nDetalhes do projeto: ${mensagem}`;
         }
 
-        const numeroWhatsApp = '5511941154343';
+        const numeroWhatsApp = '5511940737331';
         const urlWa = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(textoWa)}`;
 
         window.open(urlWa, '_blank');
@@ -451,4 +451,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     init();
     animate();
+});
+
+// ==========================================
+// Counter Animation for Metrics Section
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.counter');
+    
+    const counterOptions = {
+        threshold: 0.5,
+        rootMargin: "0px"
+    };
+
+    const animateCounters = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = +counter.getAttribute('data-target');
+                const duration = 2500; // 2.5 seconds
+                const frameDuration = 1000 / 60; // 60fps
+                const totalFrames = Math.round(duration / frameDuration);
+                let frame = 0;
+
+                const updateCount = () => {
+                    frame++;
+                    const progress = frame / totalFrames;
+                    // Easing effect (easeOutExpo)
+                    const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+                    
+                    if (frame <= totalFrames) {
+                        counter.innerText = Math.round(target * easeProgress);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+                observer.unobserve(counter);
+            }
+        });
+    }, counterOptions);
+
+    counters.forEach(counter => {
+        animateCounters.observe(counter);
+    });
 });

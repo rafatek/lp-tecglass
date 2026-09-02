@@ -5,17 +5,17 @@
     /* Cores principais */
     --color-dark: #000000;
     --color-dark-alt: #151e29;
-    --color-primary: #007acc;
-    --color-primary-light: #3399ff;
-    --color-primary-dark: #005c99;
+    --color-primary: #2A5EE8;
+    --color-primary-light: #3B72F9;
+    --color-primary-dark: #0B136D;
     --color-light: #ffffff;
     --color-bg: #0a0a0a;
     --color-gray: #94a3b8;
     --color-gray-light: #334155;
 
     /* Tipografia */
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Montserrat', sans-serif;
 
     /* Transições */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
