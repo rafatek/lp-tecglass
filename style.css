@@ -468,6 +468,14 @@ img {
     box-shadow: var(--shadow-lg);
 }
 
+.instagram-desktop {
+    display: block;
+}
+
+.instagram-mobile {
+    display: none;
+}
+
 .about-text h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -926,6 +934,14 @@ img {
 
     .nav-links.active {
         left: 0;
+    }
+
+    .instagram-desktop {
+        display: none !important;
+    }
+
+    .instagram-mobile {
+        display: block !important;
     }
 
     .mobile-menu-btn {

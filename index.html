@@ -26,7 +26,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
 
     <!-- Espaço para Google Tag Manager / Pixel da Meta -->
     <!-- <script>...</script> -->
@@ -410,15 +410,28 @@
     <section id="sobre" class="section section-dark">
         <div class="container about-container">
             <div class="about-image" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-                <iframe src="https://www.instagram.com/reel/Dc3qV0bxrwk/embed/" 
+                <!-- Versão PC: Exibe curtidas, comentários e detalhes -->
+                <iframe class="instagram-desktop" src="https://www.instagram.com/reel/Dc3qV0bxrwk/embed/captioned/" 
                     title="Publicação Tec Glass no Instagram"
                     width="100%" 
-                    height="620" 
+                    height="840" 
                     frameborder="0" 
                     scrolling="no" 
                     allowtransparency="true" 
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                    style="max-width: 460px; width: 100%; height: 620px; min-height: 600px; border: none; border-radius: 16px; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5); background: #ffffff;">
+                    style="max-width: 460px; width: 100%; height: 840px; min-height: 820px; border: none; border-radius: 16px; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5); background: #ffffff;">
+                </iframe>
+
+                <!-- Versão Celular: Exibe apenas o vídeo limpo, sem comentários ou descrição -->
+                <iframe class="instagram-mobile" src="https://www.instagram.com/reel/Dc3qV0bxrwk/embed/" 
+                    title="Publicação Tec Glass no Instagram"
+                    width="100%" 
+                    height="500" 
+                    frameborder="0" 
+                    scrolling="no" 
+                    allowtransparency="true" 
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    style="max-width: 460px; width: 100%; height: 500px; min-height: 480px; border: none; border-radius: 16px; box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5); background: #ffffff;">
                 </iframe>
                 <script async src="https://www.instagram.com/embed.js"></script>
             </div>
