@@ -3,15 +3,15 @@
 ========================================== */
 :root {
     /* Cores principais */
-    --color-dark: #1e1e1e;
-    --color-dark-alt: #252c36;
+    --color-dark: #2a2e39;
+    --color-dark-alt: #343946;
     --color-primary: #2A5EE8;
     --color-primary-light: #3B72F9;
     --color-primary-dark: #0B136D;
     --color-light: #ffffff;
-    --color-bg: #1a1a1a;
+    --color-bg: #222630;
     --color-gray: #94a3b8;
-    --color-gray-light: #334155;
+    --color-gray-light: #475569;
 
     /* Tipografia */
     --font-heading: 'Playfair Display', serif;
@@ -202,14 +202,14 @@ img {
 }
 
 .glass-light {
-    background: rgba(30, 30, 30, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(52, 57, 70, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     box-shadow: var(--shadow-glass);
 }
 
 .glass-dark {
-    background: rgba(35, 35, 35, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(42, 46, 57, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     color: var(--color-light);
 }
 
@@ -231,7 +231,7 @@ img {
     left: 0;
     width: 100%;
     padding: 15px 0;
-    background: rgba(28, 28, 28, 0.97);
+    background: rgba(34, 38, 48, 0.97);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
@@ -318,7 +318,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(5, 5, 5, 0.95) 0%, rgba(5, 5, 5, 0.7) 50%, rgba(5, 5, 5, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(34, 38, 48, 0.92) 0%, rgba(34, 38, 48, 0.75) 50%, rgba(34, 38, 48, 0.25) 100%);
 }
 
 .hero-content {
@@ -546,7 +546,7 @@ img {
 .portfolio-section {
     position: relative;
     overflow: hidden;
-    background-color: #1a1a1a;
+    background-color: var(--color-bg);
 }
 
 #portfolio-bg-canvas {
@@ -917,7 +917,7 @@ img {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background: rgba(28, 28, 28, 0.98);
+        background: rgba(34, 38, 48, 0.98);
         flex-direction: column;
         justify-content: center;
         transition: 0.4s ease;
@@ -933,7 +933,7 @@ img {
     }
 
     .hero-overlay {
-        background: linear-gradient(180deg, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.8) 100%);
+        background: linear-gradient(180deg, rgba(34, 38, 48, 0.8) 0%, rgba(34, 38, 48, 0.9) 100%);
     }
 
     .hero-text {
