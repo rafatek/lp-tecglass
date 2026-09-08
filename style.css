@@ -3,13 +3,13 @@
 ========================================== */
 :root {
     /* Cores principais */
-    --color-dark: #000000;
-    --color-dark-alt: #151e29;
+    --color-dark: #1e1e1e;
+    --color-dark-alt: #252c36;
     --color-primary: #2A5EE8;
     --color-primary-light: #3B72F9;
     --color-primary-dark: #0B136D;
     --color-light: #ffffff;
-    --color-bg: #0a0a0a;
+    --color-bg: #1a1a1a;
     --color-gray: #94a3b8;
     --color-gray-light: #334155;
 
@@ -202,13 +202,13 @@ img {
 }
 
 .glass-light {
-    background: rgba(21, 30, 41, 0.7);
+    background: rgba(30, 30, 30, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: var(--shadow-glass);
 }
 
 .glass-dark {
-    background: rgba(26, 26, 26, 0.6);
+    background: rgba(35, 35, 35, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: var(--color-light);
 }
@@ -231,7 +231,7 @@ img {
     left: 0;
     width: 100%;
     padding: 15px 0;
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(28, 28, 28, 0.97);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
@@ -546,7 +546,7 @@ img {
 .portfolio-section {
     position: relative;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #1a1a1a;
 }
 
 #portfolio-bg-canvas {
@@ -591,7 +591,7 @@ img {
     left: 0;
     right: 0;
     top: 0;
-    background: linear-gradient(to top, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0.2) 100%);
+    background: linear-gradient(to top, rgba(25, 25, 25, 0.9) 0%, rgba(25, 25, 25, 0.2) 100%);
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -917,7 +917,7 @@ img {
         left: -100%;
         width: 100%;
         height: calc(100vh - 80px);
-        background: rgba(10, 10, 10, 0.98);
+        background: rgba(28, 28, 28, 0.98);
         flex-direction: column;
         justify-content: center;
         transition: 0.4s ease;
